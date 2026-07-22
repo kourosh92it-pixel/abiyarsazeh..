@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="آبیار سازه | شرکت فنی مهندسی آب و کشاورزی - تربت حیدریه">
+  <title>آبیار سازه | شرکت فنی مهندسی آب و کشاورزی</title>
+  
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font Vazir -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f0f7fc;
+      color: #1e293b;
+      line-height: 1.8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.8rem;
+    }
+
+    /* ===== HEADER & NAVBAR ===== */
+    .navbar {
+      background: linear-gradient(135deg, #ffffff 0%, #e8f4fa 100%);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 60, 120, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 3px solid #1a7a5a;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.8rem;
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      direction: ltr;
+    }
+    .logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .logo h2 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #0a4b6e;
+    }
+    .logo span {
+      color: #1a9e6a;
+    }
+    .logo p {
+      font-size: 0.75rem;
+      color: #1a7a5a;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1e293b;
+      transition: 0.25s;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #0a4b6e;
+      border-bottom-color: #1a9e6a;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: #0a4b6e;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(145deg, #dceef9 0%, #f5fafd 100%);
+      padding: 4rem 0 3.5rem;
+      border-bottom: 1px solid #b8d8e8;
+    }
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .hero-content {
+      flex: 1.2;
+    }
+    .hero-badge {
+      background: linear-gradient(135deg, #0a4b6e20, #1a9e6a20);
+      color: #0a4b6e;
+      display: inline-block;
+      padding: 0.3rem 1.4rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border: 1px solid #1a9e6a40;
+    }
+    .hero-content h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #08344d;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+    .hero-content h1 span {
+      background: linear-gradient(135deg, #0a4b6e, #1a9e6a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #1a3b4a;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0a4b6e, #1a7a5a);
+      color: white;
+      padding: 0.8rem 2.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.25s;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(10, 75, 110, 0.25);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(10, 75, 110, 0.35);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #0a4b6e;
+      color: #0a4b6e;
+      padding: 0.8rem 2.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.25s;
+    }
+    .btn-outline:hover {
+      background: #0a4b6e;
+      color: white;
+    }
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+
+    /* ===== محصولات ===== */
+    .section {
+      padding: 4.5rem 0;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: #08344d;
+    }
+    .section-sub {
+      text-align: center;
+      color: #3a6a7a;
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 2rem 1.8rem;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(10, 75, 110, 0.07);
+      transition: 0.3s;
+      border: 1px solid #cfe2ed;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(10, 75, 110, 0.12);
+      border-color: #1a9e6a60;
+    }
+    .product-icon {
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, #0a4b6e15, #1a9e6a15);
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      border-radius: 60px;
+      margin: 0 auto 1rem;
+      color: #0a4b6e;
+    }
+    .product-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #08344d;
+    }
+    .product-card p {
+      color: #3a6a7a;
+      font-size: 0.95rem;
+    }
+
+    /* ===== خدمات ===== */
+    .services-bg {
+      background: linear-gradient(135deg, #e3f0f7, #f5fafd);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service-item {
+      background: white;
+      padding: 2rem 1.5rem;
+      border-radius: 1.2rem;
+      text-align: center;
+      transition: 0.25s;
+      border: 1px solid #cfe2ed;
+    }
+    .service-item:hover {
+      border-color: #1a9e6a80;
+      transform: translateY(-4px);
+    }
+    .service-item i {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #0a4b6e15, #1a9e6a15);
+      padding: 1rem;
+      border-radius: 60px;
+      color: #0a4b6e;
+      margin-bottom: 1rem;
+    }
+    .service-item h3 {
+      color: #08344d;
+    }
+    .service-item p {
+      color: #3a6a7a;
+      font-size: 0.95rem;
+    }
+
+    /* ===== درباره ما ===== */
+    .about-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      background: white;
+      border-radius: 2rem;
+      padding: 2.5rem;
+      box-shadow: 0 6px 24px rgba(10, 75, 110, 0.06);
+      border: 1px solid #cfe2ed;
+    }
+    .about-text {
+      flex: 2;
+    }
+    .about-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #08344d;
+    }
+    .about-text h3 i {
+      color: #1a9e6a;
+      margin-left: 8px;
+    }
+    .about-text p {
+      color: #1a3b4a;
+      margin-bottom: 0.8rem;
+      text-align: justify;
+    }
+    .about-text .highlight-box {
+      background: linear-gradient(135deg, #eef6fb, #f5fafd);
+      border-right: 4px solid #f5a623;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      margin: 1rem 0;
+    }
+    .address-card {
+      flex: 1;
+      background: linear-gradient(135deg, #eef6fb, #f5fafd);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      border-right: 4px solid #1a9e6a;
+    }
+    .address-card h3 {
+      color: #08344d;
+      margin-bottom: 1.2rem;
+    }
+    .address-card i {
+      color: #0a4b6e;
+      width: 28px;
+    }
+    .contact-info {
+      margin-top: 1.2rem;
+    }
+    .contact-info p {
+      margin: 0.7rem 0;
+      color: #1a3b4a;
+    }
+    .award-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #f5a62320, #f5a62310);
+      border: 1px solid #f5a623;
+      color: #b87a0e;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    /* ===== پروژه‌های شاخص ===== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .project-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      border-right: 4px solid #0a4b6e;
+      box-shadow: 0 2px 8px rgba(10, 75, 110, 0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: 0.2s;
+    }
+    .project-item:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 4px 16px rgba(10, 75, 110, 0.12);
+      border-right-color: #1a9e6a;
+    }
+    .project-item i {
+      color: #1a9e6a;
+      font-size: 1.3rem;
+      min-width: 28px;
+      text-align: center;
+      margin-top: 4px;
+    }
+    .project-item span {
+      color: #1a3b4a;
+      font-size: 0.95rem;
+    }
+    .project-item .highlight {
+      color: #0a4b6e;
+      font-weight: 700;
+    }
+
+    /* ===== پروژه‌های دیگر ===== */
+    .projects-other-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+    .project-other-item {
+      background: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.8rem;
+      border-right: 3px solid #1a9e6a;
+      box-shadow: 0 2px 6px rgba(10, 75, 110, 0.04);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: 0.2s;
+    }
+    .project-other-item:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 4px 12px rgba(10, 75, 110, 0.08);
+      border-right-color: #f5a623;
+    }
+    .project-other-item i {
+      color: #1a9e6a;
+      font-size: 1.1rem;
+      min-width: 24px;
+      text-align: center;
+      margin-top: 3px;
+    }
+    .project-other-item span {
+      color: #1a3b4a;
+      font-size: 0.9rem;
+    }
+    .project-other-item .highlight {
+      color: #0a4b6e;
+      font-weight: 600;
+    }
+
+    /* ===== زمینه‌های فعالیت با EMOJI ===== */
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+    .activity-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      border-right: 3px solid #1a9e6a;
+      box-shadow: 0 2px 8px rgba(10, 75, 110, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: 0.2s;
+    }
+    .activity-item:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 4px 16px rgba(10, 75, 110, 0.12);
+      border-right-color: #f5a623;
+    }
+    .activity-item span:first-child {
+      font-size: 1.5rem;
+      min-width: 32px;
+      text-align: center;
+    }
+    .activity-item span:last-child {
+      color: #1a3b4a;
+      font-size: 0.95rem;
+    }
+
+    /* ===== مجوزها و گواهی‌نامه‌ها ===== */
+    .license-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+    .license-item {
+      background: white;
+      padding: 1.2rem 1.5rem;
+      border-radius: 1rem;
+      border-right: 3px solid #0a4b6e;
+      box-shadow: 0 2px 8px rgba(10, 75, 110, 0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: 0.2s;
+    }
+    .license-item:hover {
+      transform: translateX(-5px);
+      box-shadow: 0 4px 16px rgba(10, 75, 110, 0.1);
+    }
+    .license-item i {
+      color: #f5a623;
+      font-size: 1.3rem;
+      min-width: 28px;
+      text-align: center;
+      margin-top: 3px;
+    }
+    .license-item span {
+      color: #1a3b4a;
+      font-size: 0.95rem;
+    }
+
+    /* ===== تماس با ما ===== */
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .contact-form {
+      flex: 1.2;
+      background: white;
+      padding: 2.2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 16px rgba(10, 75, 110, 0.06);
+      border: 1px solid #cfe2ed;
+    }
+    .contact-details {
+      flex: 1;
+      background: linear-gradient(135deg, #eef6fb, #f5fafd);
+      padding: 2.2rem;
+      border-radius: 1.5rem;
+      border: 1px solid #cfe2ed;
+    }
+    .contact-details h3 i {
+      color: #1a9e6a;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      margin: 0.6rem 0;
+      border: 2px solid #dce8f0;
+      border-radius: 1rem;
+      font-family: inherit;
+      transition: 0.2s;
+      background: #fafdff;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #1a9e6a;
+      box-shadow: 0 0 0 3px #1a9e6a20;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+    .whatsapp-btn i {
+      margin-left: 8px;
+    }
+    .call-btn {
+      display: inline-block;
+      background: #0a4b6e;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 0.5rem;
+      margin-left: 8px;
+    }
+    .call-btn i {
+      margin-left: 8px;
+    }
+    .telegram-btn {
+      display: inline-block;
+      background: #0088cc;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 0.5rem;
+      margin-left: 8px;
+    }
+    .telegram-btn i {
+      margin-left: 8px;
+    }
+    .success-message {
+      display: none;
+      background: #1a9e6a20;
+      border: 2px solid #1a9e6a;
+      color: #1a7a5a;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .success-message.show {
+      display: block;
+    }
+
+    /* ===== فوتر ===== */
+    footer {
+      background: linear-gradient(135deg, #08344d, #0a4b6e);
+      color: #d4e8f2;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #7fc9e6;
+      text-decoration: none;
+    }
+    .footer-social i {
+      font-size: 1.5rem;
+      margin: 0 8px;
+      color: #d4e8f2;
+      transition: 0.2s;
+    }
+    .footer-social i:hover {
+      color: #7fc9e6;
+      transform: scale(1.1);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+      .hero-img img {
+        max-height: 200px;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+      .section {
+        padding: 3rem 0;
+      }
+      .about-wrap {
+        padding: 1.5rem;
+      }
+      .activity-grid {
+        grid-template-columns: 1fr;
+      }
+      .license-grid {
+        grid-template-columns: 1fr;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .projects-other-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 72px;
+      right: 0;
+      left: 0;
+      padding: 1.5rem;
+      gap: 1rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      border-radius: 0 0 1.5rem 1.5rem;
+      z-index: 999;
+      border-top: 2px solid #1a9e6a;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <div>
+        <h2>آبیار <span>سازه</span> اتحاد</h2>
+        <p>شرکت فنی مهندسی</p>
+      </div>
+      <img src="https://raw.githubusercontent.com/kourosh92it-pixel/Abyarsazeh-.eth/refs/heads/main/photo27941943644.jpg" alt="لوگو آبیار سازه">
+    </div>
+    <div class="menu-toggle" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">خانه</a></li>
+      <li><a href="#products">محصولات</a></li>
+      <li><a href="#services">خدمات</a></li>
+      <li><a href="#about">درباره ما</a></li>
+      <li><a href="#projects">پروژه‌های شاخص</a></li>
+      <li><a href="#projects-other">پروژه‌ها</a></li>
+      <li><a href="#activities">زمینه فعالیت</a></li>
+      <li><a href="#licenses">مجوزها</a></li>
+      <li><a href="#contact">تماس با ما</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-tractor"></i> ۱۲ سال تجربه درخشان</div>
+        <h1>طراحی، مشاوره، اجرا و تهیه لوله و اتصالات انواع سیستم‌های آبیاری تحت فشار مزارع و زیر سطحی باغات پسته</h1>
+        <p>آبیار سازه، پیشرو در تامین لوله‌های پلی اتیلن، اتصالات فشار قوی و سیستم‌های آبیاری مدرن در تربت حیدریه و شرق کشور.</p>
+        <div class="btn-group">
+          <a href="#activities" class="btn-primary">زمینه‌های فعالیت</a>
+          <a href="#contact" class="btn-outline">ارتباط با ما</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://raw.githubusercontent.com/kourosh92it-pixel/Abyarsazeh-.eth/refs/heads/main/photo27941943644.jpg" alt="لوگو آبیار سازه">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== محصولات ===== -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">محصولات آبیار سازه</h2>
+      <p class="section-sub">تجهیزات با کیفیت برای آبیاری مدرن و اصولی</p>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-icon"><i class="fas fa-tint"></i></div>
+          <h3>لوله و اتصالات پلی اتیلن</h3>
+          <p>لوله و اتصالات پلی اتیلن در سایزهای مختلف، مناسب برای آبیاری تحت فشار و کشاورزی مدرن</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon"><i class="fas fa-plug"></i></div>
+          <h3>انواع نوارهای تیپ و لوله بارانی</h3>
+          <p>نوار تیپ و لوله بارانی با کیفیت بالا، مناسب برای سیستم‌های آبیاری قطره‌ای و بارانی</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon"><i class="fas fa-water"></i></div>
+          <h3>انواع قطره چکان و لوله‌های آبیاری زیر سطحی</h3>
+          <p>قطره چکان‌های با دقت بالا و لوله‌های مخصوص آبیاری زیر سطحی برای باغات و مزارع</p>
+        </div>
+        <div class="product-card">
+          <div class="product-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>انواع ورق‌های ژئوممبران</h3>
+          <p>ورق‌های ژئوممبران با کیفیت عالی جهت استخرهای کشاورزی، روکش استخری و عایق‌بندی</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== خدمات ===== -->
+  <section id="services" class="section services-bg">
+    <div class="container">
+      <h2 class="section-title">خدمات آبیار سازه</h2>
+      <p class="section-sub">ارائه راهکارهای نوین آبیاری و پشتیبانی فنی</p>
+      <div class="services-grid">
+        <div class="service-item"><i class="fas fa-chalkboard-user"></i><h3>مشاوره رایگان</h3><p>طراحی سیستم آبیاری متناسب با زمین و محصول شما</p></div>
+        <div class="service-item"><i class="fas fa-headset"></i><h3>پشتیبانی فنی</h3><p>گارانتی محصولات و خدمات پس از فروش</p></div>
+        <div class="service-item"><i class="fas fa-handshake"></i><h3>تضمین کیفیت</h3><p>استفاده از مواد اولیه مرغوب و استانداردهای بین‌المللی</p></div>
+        <div class="service-item"><i class="fas fa-hard-hat"></i><h3>اجرای فنی پروژه‌ها</h3><p>اجرای فنی پروژه‌ها همراه با کادری مجرب</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== درباره ما ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-text">
+          <h3><i class="fas fa-leaf"></i> درباره آبیار سازه</h3>
+          <p>
+            شرکت فنی مهندسی آبیار سازه اتحاد تربت، زیر مجموعه اتحادیه شرکت‌های تعاونی تولید روستایی تربت حیدریه 
+            (به شماره ثبت ۲۸۰۵ و با عضویت ۱۸ شرکت تعاونی تولید روستایی و ۶۰۰۰ عضو در حوزه شهرستان‌های تربت حیدریه، 
+            رشتخوار، مه‌ولات و زاوه) با هدف گسترش فناوری‌های آب‌محور در جهت استفاده بهینه از منابع آبی و انجام 
+            پروژه‌های مختلف آبی و سیستم‌های آبیاری تحت فشار، فعالیت خود را از سال ۱۳۹۳ آغاز کرد.
+          </p>
+          <p>
+            این شرکت تاکنون توانسته است با تعهد در انجام کیفی پروژه‌ها و تلفیق دانش آبیاری با تجربه و ارائه خدمات 
+            و تجهیزات با کیفیت و همچنین استفاده از توانمندی‌های شرکت‌های تعاونی تولید روستایی عضو مستقر در هر بخش، 
+            سهمی هر چند کوچک در افزایش راندمان سیستم‌های آبیاری، کاهش مصرف آب و رضایت‌مندی بهره‌برداران را به خود اختصاص دهد.
+          </p>
+          <div class="highlight-box">
+            <i class="fas fa-trophy" style="color:#f5a623; font-size:1.2rem;"></i>
+            <strong style="color:#08344d;">افتخار:</strong> شرکت در سال ۱۳۹۵ به عنوان <strong>شرکت نمونه فعال در زمینه آب و خاک</strong> 
+            در سطح شهرستان تربت حیدریه از سوی مدیریت جهاد کشاورزی انتخاب شده است.
+          </div>
+          <div class="award-badge">
+            <i class="fas fa-certificate"></i> شرکت نمونه آب و خاک ۱۳۹۵
+          </div>
+        </div>
+        <div class="address-card">
+          <h3><i class="fas fa-location-dot"></i> نشانی ما در تربت حیدریه</h3>
+          <p><i class="fas fa-map-marker-alt"></i> شهرستان تربت حیدریه – بلوار امام رضا ۳۳/۳ – شرکت آبیار سازه اتحاد</p>
+          <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> تلفن تماس: <strong>۰۵۱-۵۲۲۷۴۰۱۸</strong></p>
+            <p><i class="fas fa-mobile-alt"></i> موبایل: <strong>۰۹۱۵۵۳۲۰۶۵۳</strong></p>
+            <p><i class="fas fa-envelope"></i> abyarsazeh.eth@gmail.com</p>
+            <p><i class="fas fa-clock"></i> ساعات کاری:</p>
+            <p style="padding-right: 28px; margin-top: -5px; font-size: 0.95rem;">
+              شنبه تا چهارشنبه: ۷ صبح تا ۱۳<br>
+              پنج‌شنبه: ۷ صبح تا ۱۲
+            </p>
+            <p><i class="fas fa-building"></i> شماره ثبت: ۲۸۰۵</p>
+            <p><i class="fas fa-calendar-alt"></i> تاریخ ثبت: ۱۶/۱۲/۱۳۹۳</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== پروژه‌های شاخص ===== -->
+  <section id="projects" class="section services-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-star" style="color:#f5a623;"></i> پروژه‌های شاخص</h2>
+      <p class="section-sub">نمونه‌ای از پروژه‌های موفق شرکت فنی مهندسی آبیار سازه</p>
+      <div class="projects-grid">
+        <div class="project-item">
+          <i class="fas fa-water"></i>
+          <span>اجرای پروژه‌های آبیاری تحت فشار از محل اعتبارات دولتی زیر نظر مدیریت آب و خاک سازمان جهاد کشاورزی در شهرستان‌های <span class="highlight">تربت حیدریه، زاوه و رشتخوار</span> در سطح بیش از <span class="highlight">۲۰۰۰ هکتار</span></span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-water"></i>
+          <span>اجرای پروژه کانال بتونی آغویه و ترقی به طول <span class="highlight">۱۵۰۰ متر</span> شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه‌های احیا و مرمت قنوات <span class="highlight">حصار جلال، زرکک، نسر</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه‌های احیا و مرمت قنوات <span class="highlight">باغسلطانی و عبدل‌آباد</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان مه‌ولات</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنوات <span class="highlight">دول‌آباد و قلعه نو و چولانک</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات <span class="highlight">دوغشک</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات <span class="highlight">کلاغ آباد فاز ۱ و ۲</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات <span class="highlight">علاقه</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات <span class="highlight">کامه سفلی</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات روستای <span class="highlight">سیوکی</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنات <span class="highlight">مورشک</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه احیا و مرمت قنوات <span class="highlight">فدیهه کاج درخت، معدن</span> زیر نظر مدیریت آب و خاک جهاد کشاورزی شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-water"></i>
+          <span>اجرای استخر ژئوممبران در سطح <span class="highlight">۱۰۰۰۰۰ متر مکعب</span> در شهرستان‌های تربت حیدریه و زاوه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>اجرای سیستم آبیاری تحت فشار فضای سبز <span class="highlight">بلوار امام رضا</span>، شهرستان تربت حیدریه با اخذ تاییدیه از استانداری</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>مطالعه، طراحی و اجرای سیستم آبیاری تحت فشار فضای سبز <span class="highlight">پارک علم الهدی شهرک ولیعصر</span>، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>مطالعه، طراحی و اجرای سیستم آبیاری فضای سبز <span class="highlight">بلوار باهنر</span> شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>مطالعه، طراحی و اجرای سیستم آبیاری تحت فشار فضای سبز <span class="highlight">بلوار امام رضا</span>، شهرستان تربت حیدریه با اخذ تاییدیه از استانداری</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-leaf"></i>
+          <span>مطالعه، طراحی بیش از <span class="highlight">صدها هکتار</span> از اراضی زراعی و باغی استان خراسان رضوی</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>مطالعه، طراحی سیستم آبیاری تحت فشار فضای سبز <span class="highlight">پارک جنگلی پیشکوه</span>، شهرستان تربت حیدریه با اخذ تاییدیه استانداری</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-tree"></i>
+          <span>مطالعه، طراحی سیستم آبیاری تحت فشار فضای سبز <span class="highlight">بلوار شهید چراغچی مشهد</span>، شهرستان تربت حیدریه با اخذ تاییدیه استانداری</span>
+        </div>
+        <div class="project-item">
+          <i class="fas fa-hospital"></i>
+          <span>مطالعه، طراحی سیستم آبیاری تحت فشار فضای سبز <span class="highlight">بیمارستان تامین اجتماعی</span>، شهرستان تربت حیدریه با اخذ تاییدیه استانداری</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== پروژه‌های دیگر ===== -->
+  <section id="projects-other" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-clipboard-list" style="color:#0a4b6e;"></i> پروژه‌ها</h2>
+      <p class="section-sub">لیست پروژه‌های اجرا شده توسط شرکت فنی مهندسی آبیار سازه</p>
+      <div class="projects-other-grid">
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–بارانی آقای <span class="highlight">مجید بهرامی</span> به مساحت <span class="highlight">۳۷.۵ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–کم فشار آقای <span class="highlight">احمد ربانی</span> به مساحت <span class="highlight">۵۲ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–بارانی آقای <span class="highlight">هادی قرایی</span> به مساحت <span class="highlight">۱۷ هکتار</span>، بخش مرکزی، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه تجمیعی آبیاری قطره‌ای زراعی–کم فشار <span class="highlight">احمد آباد شیخ</span> به مساحت <span class="highlight">۱۵۵ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–کم فشار آقای <span class="highlight">غلامحسین محمدی</span> به مساحت <span class="highlight">۵۲ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–کم فشار <span class="highlight">شرکت تعاونی بعثت</span> به مساحت <span class="highlight">۹۰.۴ هکتار</span>، گلسرا، شهرستان زاوه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–بارانی آقای <span class="highlight">حامد ارباب سلجوقی</span> به مساحت <span class="highlight">۳۱ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–کم فشار آقای <span class="highlight">سهراب اسحاقی</span> به مساحت <span class="highlight">۹۵ هکتار</span>، جلگه رخ، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tint"></i>
+          <span>اجرای پروژه آبیاری قطره‌ای زراعی–کم فشار آقای <span class="highlight">احمدرضا کریمی</span> به مساحت <span class="highlight">۲۳ هکتار</span>، کدکن، شهرستان تربت حیدریه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tree"></i>
+          <span>اجرای آبیاری قطره‌ای باغی آقای <span class="highlight">عباس مالکی</span> به مساحت <span class="highlight">۱۱ هکتار</span>، شهرستان زاوه</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-tree"></i>
+          <span>اجرای آبیاری قطره‌ای باغی آقای <span class="highlight">محسن صادقی</span> به مساحت <span class="highlight">۱۰ هکتار</span>، شهرستان رشتخوار</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">کاظم مهدی‌زاده</span> به مساحت <span class="highlight">۴ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">حامد اسدیان</span> به مساحت <span class="highlight">۴ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">مصطفی آبراه</span> به مساحت <span class="highlight">۴ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">محمد اسماعیلی</span> به مساحت <span class="highlight">۳ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">علی طاهری</span> به مساحت <span class="highlight">۴ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">میرجلیلی</span> به مساحت <span class="highlight">۷ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">محمود پسندیده</span> به مساحت <span class="highlight">۸ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقایان <span class="highlight">محمد و حسین نیکزاد</span> به مساحت <span class="highlight">۵ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">علی اکبر زارعی</span> به مساحت <span class="highlight">۱۰ هکتار</span>، رشتخوار</span>
+        </div>
+        <div class="project-other-item">
+          <i class="fas fa-seedling"></i>
+          <span>اجرای آبیاری زیرسطحی پسته آقای <span class="highlight">حسن جعفری</span> به مساحت <span class="highlight">۱۴.۵ هکتار</span>، فیض آباد، شهرستان مه ولات</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== زمینه‌های فعالیت با EMOJI ===== -->
+  <section id="activities" class="section services-bg">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-tasks" style="color:#1a9e6a;"></i> زمینه‌های فعالیت</h2>
+      <p class="section-sub">خدمات تخصصی شرکت فنی مهندسی آبیار سازه</p>
+      <div class="activity-grid">
+        <div class="activity-item">
+          <span>💧</span>
+          <span>مشاوره، طراحی و اجرای سیستم‌های آبیاری تحت فشار مزارع و باغات، فضای سبز شهری، باغ تالارها</span>
+        </div>
+        <div class="activity-item">
+          <span>🌳</span>
+          <span>مشاوره، طراحی و اجرای سیستم آبیاری زیر سطحی باغات پسته</span>
+        </div>
+        <div class="activity-item">
+          <span>📈</span>
+          <span>بهبود و ارتقاء کارائی سیستم‌های آبیاری در حال بهره‌برداری</span>
+        </div>
+        <div class="activity-item">
+          <span>🏊</span>
+          <span>طراحی و اجرای استخرهای آب ژئوممبران</span>
+        </div>
+        <div class="activity-item">
+          <span>⛲</span>
+          <span>طراحی و اجرای انواع آبنما و فواره</span>
+        </div>
+        <div class="activity-item">
+          <span>📦</span>
+          <span>نصب و اجرای مخازن پلی اتیلن</span>
+        </div>
+        <div class="activity-item">
+          <span>🔌</span>
+          <span>عرضه لوله و اتصالات پلی اتیلن در سایزهای مختلف</span>
+        </div>
+        <div class="activity-item">
+          <span>🌾</span>
+          <span>عرضه لوازم آبیاری بارانی و قطره‌ای همچون انواع آبپاش‌های مزرعه و فضای سبز</span>
+        </div>
+        <div class="activity-item">
+          <span>🏠</span>
+          <span>عرضه پکیج‌های آبیاری فضای سبز خانگی (پاسیو و باغچه)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== مجوزها و گواهی‌نامه‌ها ===== -->
+  <section id="licenses" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-certificate" style="color:#f5a623;"></i> مجوزها و گواهی‌نامه‌ها</h2>
+      <p class="section-sub">گواهی‌ها و مجوزهای رسمی شرکت آبیار سازه</p>
+      <div class="license-grid">
+        <div class="license-item"><i class="fas fa-award"></i><span>رتبه پایه ۵ پیمانکاری آب از سازمان مدیریت و برنامه‌ریزی (ساجات)</span></div>
+        <div class="license-item"><i class="fas fa-award"></i><span>رتبه پایه ۵ صلاحیت پیمانکاری از دفتر بهبود و توسعه سامانه‌های نوین آبیاری در زمینه انجام امور پیمانکاری روش‌های نوین آبیاری</span></div>
+        <div class="license-item"><i class="fas fa-award"></i><span>رتبه پایه ۸ صلاحیت پیمانکاری نظام مهندسی کشاورزی در گرایش تخصصی امور آب، تأسیسات آبی و آبیاری و زهکشی</span></div>
+        <div class="license-item"><i class="fas fa-id-card"></i><span>گواهی عضویت در سازمان نظام مهندسی و بسیج سازندگی جهاد کشاورزی</span></div>
+        <div class="license-item"><i class="fas fa-shield-alt"></i><span>گواهی صلاحیت ایمنی عمومی وزارت تعاون، کار، رفاه و خدمات اجتماعی</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== تماس با ما ===== -->
+  <section id="contact" class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-phone-alt" style="color:#1a9e6a;"></i> تماس با ما</h2>
+      <p class="section-sub">برای مشاوره و اطلاعات بیشتر با ما در ارتباط باشید</p>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="color:#08344d;"><i class="fas fa-paper-plane" style="color:#1a9e6a;"></i> ارسال پیام</h3>
+          <form id="contactForm" action="https://formspree.io/f/xpqvpyyw" method="POST">
+            <input type="text" name="name" placeholder="نام و نام خانوادگی" required>
+            <input type="tel" name="phone" placeholder="شماره تماس">
+            <input type="text" name="subject" placeholder="موضوع (لوله / اتصالات / مشاوره)">
+            <textarea name="message" rows="3" placeholder="پیام شما ..." required></textarea>
+            <button type="submit" class="btn-primary" style="width:100%; border:none;">
+              ارسال پیام <i class="fas fa-arrow-left"></i>
+            </button>
+            <div id="successMessage" class="success-message">
+              ✅ پیام شما با موفقیت ارسال شد!<br>
+              <small>کارشناسان آبیار سازه در اسرع وقت با شما تماس می‌گیرند.</small>
+            </div>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h3 style="color:#08344d;"><i class="fas fa-store"></i> ارتباط مستقیم با ما</h3>
+          <p>کارشناسان آبیار سازه آماده پاسخگویی به سوالات شما در زمینه محصولات و خدمات آبیاری هستند.</p>
+          <hr style="margin:1.2rem 0; border-color:#cfe2ed;">
+          <p><i class="fas fa-phone-alt" style="color:#0a4b6e;"></i> <strong>تلفن شرکت:</strong> ۰۵۱-۵۲۲۷۴۰۱۸</p>
+          <p><i class="fas fa-mobile-alt" style="color:#0a4b6e;"></i> <strong>موبایل:</strong> ۰۹۱۵۵۳۲۰۶۵۳</p>
+          <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong>واتساپ:</strong> ۰۹۱۵۵۳۲۰۶۵۳</p>
+          <p><i class="fab fa-instagram" style="color:#E1306C;"></i> <strong>اینستاگرام:</strong> @abyarsazeh.eth</p>
+          <p><i class="fas fa-envelope" style="color:#0a4b6e;"></i> <strong>ایمیل:</strong> abyarsazeh.eth@gmail.com</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
+            <a href="tel:05152274018" class="call-btn">
+              <i class="fas fa-phone"></i> تلفن شرکت
+            </a>
+            <a href="tel:09155320653" class="call-btn" style="background:#1a7a5a;">
+              <i class="fas fa-mobile-alt"></i> موبایل
+            </a>
+            <a href="https://wa.me/989155320653" target="_blank" class="whatsapp-btn">
+              <i class="fab fa-whatsapp"></i> واتساپ
+            </a>
+            <a href="https://t.me/Abyarsazeh2805" target="_blank" class="telegram-btn">
+              <i class="fab fa-telegram"></i> تلگرام
+            </a>
+          </div>
+          <div style="margin-top:1.2rem; background:linear-gradient(135deg,#dceef9,#f5fafd); padding:0.8rem; border-radius:1rem; text-align:center; border:1px solid #b8d8e8;">
+            <i class="fas fa-map-pin" style="color:#0a4b6e;"></i> <strong>خراسان رضوی - تربت حیدریه</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/abyarsazeh.eth" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/989155320653" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://t.me/Abyarsazeh2805" target="_blank"><i class="fab fa-telegram"></i></a>
+  </div>
+  <p style="margin: 1.2rem 0 0.5rem;">© ۱۴۰۴ تمامی حقوق متعلق به شرکت فنی مهندسی آبیار سازه می‌باشد.</p>
+  <p style="font-size:0.85rem; opacity:0.8;">
+    <i class="fas fa-map-marker-alt"></i> تربت حیدریه، بلوار امام رضا ۳۳/۳ | 
+    <i class="fas fa-phone"></i> ۰۵۱-۵۲۲۷۴۰۱۸ | 
+    <i class="fas fa-mobile-alt"></i> ۰۹۱۵۵۳۲۰۶۵۳
+  </p>
+  <p style="font-size:0.75rem; opacity:0.6; margin-top:0.5rem;">
+    شماره ثبت: ۲۸۰۵ | زیر مجموعه اتحادیه شرکت‌های تعاونی تولید روستایی تربت حیدریه
+  </p>
+</footer>
+
+<script>
+  // ===== منوی موبایل =====
+  const mobileBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.getElementById('navLinks');
+  mobileBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu');
+  });
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('mobile-menu');
+    });
+  });
+
+  // ===== فعال‌سازی لینک منو هنگام اسکرول =====
+  window.addEventListener('scroll', () => {
+    let sections = document.querySelectorAll('section[id]');
+    let scrollPos = window.scrollY + 130;
+    sections.forEach(sec => {
+      let top = sec.offsetTop;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+      if(scrollPos >= top && scrollPos < top + height) {
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.classList.remove('active');
+          if(link.getAttribute('href') === '#'+id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  });
+
+  // ===== فرم تماس =====
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('successMessage');
+
+  if(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if(response.ok) {
+          successMsg.classList.add('show');
+          form.reset();
+          setTimeout(() => {
+            successMsg.classList.remove('show');
+          }, 5000);
+        } else {
+          alert('❌ خطا در ارسال پیام. لطفاً دوباره تلاش کنید.');
+        }
+      }).catch(error => {
+        alert('❌ خطا در ارتباط با سرور. لطفاً دوباره تلاش کنید.');
+      });
+    });
+  }
+</script>
+</body>
+</html>
